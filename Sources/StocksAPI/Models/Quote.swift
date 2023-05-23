@@ -47,7 +47,7 @@ public struct Quote: Codable, Identifiable, Hashable {
     public let regularMarketPrice: Double?
     public let regularMarketChange: Double?
     public let regularMarketChangePercent: Double?
-    public let regularMarketChangePreviousClose: Double?
+    public let regularMarketPreviousClose: Double?
     
     public let postMarketPrice: Double?
     public let postMarketChange: Double?
@@ -67,7 +67,7 @@ public struct Quote: Codable, Identifiable, Hashable {
     public let trailingAnnualDividendYield: Double?
     public let epsTrailingTwelveMonths: Double?
     
-    public init(currency: String?, marketState: String?, fullExchangeName: String?, displayName: String?, symbol: String?, regularMarketPrice: Double?, regularMarketChange: Double?, regularMarketChangePercent: Double?, regularMarketChangePreviousClose: Double?, postMarketPrice: Double?, postMarketChange: Double?, regularMarketOpen: Double?, regularMarketDayHigh: Double?, regularMarketDayLow: Double?, regularMarketVolume: Double?, trailingPE: Double?, marketCap: Double?, fiftyTwoWeekLow: Double?, fiftyTwoWeekHigh: Double?, averageDailyVolume3Month: Double?, trailingAnnualDividendYield: Double?, epsTrailingTwelveMonths: Double?) {
+    public init(currency: String?, marketState: String?, fullExchangeName: String?, displayName: String?, symbol: String?, regularMarketPrice: Double?, regularMarketChange: Double?, regularMarketChangePercent: Double?, regularMarketPreviousClose: Double?, postMarketPrice: Double?, postMarketChange: Double?, regularMarketOpen: Double?, regularMarketDayHigh: Double?, regularMarketDayLow: Double?, regularMarketVolume: Double?, trailingPE: Double?, marketCap: Double?, fiftyTwoWeekLow: Double?, fiftyTwoWeekHigh: Double?, averageDailyVolume3Month: Double?, trailingAnnualDividendYield: Double?, epsTrailingTwelveMonths: Double?) {
         self.currency = currency
         self.marketState = marketState
         self.fullExchangeName = fullExchangeName
@@ -76,7 +76,7 @@ public struct Quote: Codable, Identifiable, Hashable {
         self.regularMarketPrice = regularMarketPrice
         self.regularMarketChange = regularMarketChange
         self.regularMarketChangePercent = regularMarketChangePercent
-        self.regularMarketChangePreviousClose = regularMarketChangePreviousClose
+        self.regularMarketPreviousClose = regularMarketPreviousClose
         self.postMarketPrice = postMarketPrice
         self.postMarketChange = postMarketChange
         self.regularMarketOpen = regularMarketOpen
