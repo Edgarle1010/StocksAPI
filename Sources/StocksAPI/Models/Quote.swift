@@ -50,7 +50,7 @@ public struct Quote: Codable, Identifiable, Hashable {
     public let regularMarketChangePreviousClose: Double?
     
     public let postMarketPrice: Double?
-    public let postMarketPriceChange: Double?
+    public let postMarketChange: Double?
     
     public let regularMarketOpen: Double?
     public let regularMarketDayHigh: Double?
