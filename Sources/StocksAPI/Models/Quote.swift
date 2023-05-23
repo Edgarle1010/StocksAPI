@@ -62,12 +62,12 @@ public struct Quote: Codable, Identifiable, Hashable {
     
     public let fiftyTwoWeekLow: Double?
     public let fiftyTwoWeekHigh: Double?
-    public let averangeDailyVoulume3Month: Double?
+    public let averageDailyVolume3Month: Double?
     
     public let trailingAnnualDividendYield: Double?
     public let epsTrailingTwelveMonths: Double?
     
-    public init(currency: String?, marketState: String?, fullExchangeName: String?, displayName: String?, symbol: String?, regularMarketPrice: Double?, regularMarketChange: Double?, regularMarketChangePercent: Double?, regularMarketChangePreviousClose: Double?, postMarketPrice: Double?, postMarketChange: Double?, regularMarketOpen: Double?, regularMarketDayHigh: Double?, regularMarketDayLow: Double?, regularMarketVolume: Double?, trailingPE: Double?, marketCap: Double?, fiftyTwoWeekLow: Double?, fiftyTwoWeekHigh: Double?, averangeDailyVoulume3Month: Double?, trailingAnnualDividendYield: Double?, epsTrailingTwelveMonths: Double?) {
+    public init(currency: String?, marketState: String?, fullExchangeName: String?, displayName: String?, symbol: String?, regularMarketPrice: Double?, regularMarketChange: Double?, regularMarketChangePercent: Double?, regularMarketChangePreviousClose: Double?, postMarketPrice: Double?, postMarketChange: Double?, regularMarketOpen: Double?, regularMarketDayHigh: Double?, regularMarketDayLow: Double?, regularMarketVolume: Double?, trailingPE: Double?, marketCap: Double?, fiftyTwoWeekLow: Double?, fiftyTwoWeekHigh: Double?, averageDailyVolume3Month: Double?, trailingAnnualDividendYield: Double?, epsTrailingTwelveMonths: Double?) {
         self.currency = currency
         self.marketState = marketState
         self.fullExchangeName = fullExchangeName
@@ -87,7 +87,7 @@ public struct Quote: Codable, Identifiable, Hashable {
         self.marketCap = marketCap
         self.fiftyTwoWeekLow = fiftyTwoWeekLow
         self.fiftyTwoWeekHigh = fiftyTwoWeekHigh
-        self.averangeDailyVoulume3Month = averangeDailyVoulume3Month
+        self.averageDailyVolume3Month = averageDailyVolume3Month
         self.trailingAnnualDividendYield = trailingAnnualDividendYield
         self.epsTrailingTwelveMonths = epsTrailingTwelveMonths
     }
